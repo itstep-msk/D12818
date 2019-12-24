@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block (блочные элементы)</title>
+</head>
+<body>
+
+<div class="block">apple</div>
+<div class="block">orange</div>
+<div class="inline">banana</div>
+<div class="inline">cherry</div>
+<div class="inline-block">melon</div>
+<div class="inline-block">watermelon</div>
+
+<style>
+	.block {
+		display: block;
+		background: orange;
+		width: 100px;
+	}
+
+	.inline {
+		display: inline;
+		width: 10000px; /* у inline не работает ширина */
+		background: yellow;
+	}
+
+	.inline-block {
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		background: purple;
+		/*margin: 10px 20px 30px 40px; */
+		margin-top: 10px;
+		margin-right: 20px;
+		margin-bottom: 30px;
+		margin-left: 40px;
+	}
+</style>
+
+</body>
+</html>

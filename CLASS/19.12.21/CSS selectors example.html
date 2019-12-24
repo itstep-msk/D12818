@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selectors examples</title>
+</head>
+<body>
+
+<div class="russia">
+	<div class="panzer large">Panzer large from Russia</div>
+	<div class="panzer small">Panzer small from Russia</div>
+	<div class="panzer">Panzer from Russia</div>
+</div>
+
+<div class="usa">
+	<div class="panzer large">Panzer large from USA</div>
+	<div class="panzer small">Panzer small from USA</div>
+	<div class="panzer">Panzer from USA</div>
+</div>
+
+<div class="car">bmw</div>
+<span class="car">audi</span>
+<p class="car">mersedes</p>
+
+<!-- окрасить bmw в красный цвет (применить стиль только к div у которого класс car) -->
+
+<style>
+	/* Для div, у которого есть class="car" */
+	div.car {
+		color: red;
+	}
+
+	.russia .panzer.large {
+		color: green;
+		font-size: 30px;
+	}
+
+	.russia .panzer.small {
+		color: aqua;
+		font-size: 14px;
+	}
+</style>
+
+<!-- К танку из России стиль:
+К БОЛЬШОМУ: размер шрифта 30px, цвет green
+К МАЛЕНЬКОМУ: размер шрифта 14px, цвет aqua
+-->
+
+<!-- К танку из США стиль:
+К БОЛЬШОМУ: размер шрифта 32px, цвет orange
+К МАЛЕНЬКОМУ: размер шрифта 10px, цвет brown
+ -->
+
+</body>
+</html>
